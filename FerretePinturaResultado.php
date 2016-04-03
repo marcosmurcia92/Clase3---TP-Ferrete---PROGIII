@@ -1,6 +1,6 @@
 <html>
 <head>
-	<title>Ferrete Facturacion Resultado</title>
+	<title>Ferrete Pintura Resultado</title>
 	<link rel="stylesheet" href="estilo.css">
 	<link rel="stylesheet" href="animacion.css">
 </head>
@@ -9,22 +9,17 @@
 		<form class="CajaEnunciado">
 			<?php
 				//var_dump($_POST);
-				$primerProd = $_POST['Prod1'];
-				$segundoProd = $_POST['Prod2'];
-				$tercerProd = $_POST['Prod3'];
-				if(isset($_POST['Sumar'])){
-					$suma = $primerProd + $segundoProd + $tercerProd;
-					echo "La suma de los tres productos es de: ".$suma;
-				}else if(isset($_POST['Promediar'])){
-					$prom = ($primerProd + $segundoProd + $tercerProd) / 3;
-					echo "El promedio de los tres precios es de: ".$prom;
-				}else if(isset($_POST['PrecioFinal'])){
-					$precioFin = ($primerProd + $segundoProd + $tercerProd) * 1.21;
-					echo "El precio final (+IVA 21%) es : ".$precioFin;
+				$temp = $_POST['Temperatura'];
+				if(isset($_POST['FaC'])){
+					$tempC = ($temp - 32) / 1.8;
+					echo "La temperatura ingresada (".$temp."ºF) en centigrados es de ".$tempC."ºC";
+				}else if(isset($_POST['CaF'])){
+					$tempF = $temp * 1.8 + 32;
+					echo "La temperatura ingresada (".$temp."ºC) en centigrados es de ".$tempF."ºF";
 				}
 			?> 
 		</form><br><br><br><br><br>
-		<form action="FerreteFacturacion.html" method="POST">
+		<form action="FerretePintura.html" method="POST">
 			<input type="Submit" class = "MiBotonUTN" value="Volver Atras">
 		</form>
 	</div>

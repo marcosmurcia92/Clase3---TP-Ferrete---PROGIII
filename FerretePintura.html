@@ -1,19 +1,16 @@
 <html>
 <head>
-	<title>Ferrete Facturacion</title>
+	<title>Ferrete Pintura</title>
 	<link rel="stylesheet" href="estilo.css">
 	<link rel="stylesheet" href="animacion.css">
 </head>
 <body>
 	<div class="CajaUno animated flipInX">
-	<h1>Ferrete Facturacion: </h1>
-	<form id="FormIngreso" action="FerreteFacturacionResultado.php" method="POST">
-		<input type="text" name="Prod1" placeholder="Ingrese el primer Producto"><br>
-		<input type="text" name="Prod2" placeholder="Ingrese el segundo Producto"><br>
-		<input type="text" name="Prod3" placeholder="Ingrese el tercer Producto"><br>
-		<input class="MiBotonUTN animated flipInY" type="Submit" name="Sumar" value="Sumar Productos">
-		<input class="MiBotonUTN animated flipInY" type="Submit" name="Promediar" value="Calcular Promedio">
-		<input class="MiBotonUTN animated flipInY" type="Submit" name="PrecioFinal" value="Calcular precio con IVA">
+	<h1>Ferrete Pintura: </h1>
+	<form id="FormIngreso" action="FerretePinturaResultado.php" method="POST">
+		<input type="text" name="Temperatura" placeholder="Ingrese la Temperatura"><br>
+		<input class="MiBotonUTN animated flipInY" type="Submit" name="FaC" value="De Fahrenheit a Centigrados">
+		<input class="MiBotonUTN animated flipInY" type="Submit" name="CaF" value="De Centigrados a Fahrenheit">
 	</form>
 	</div>
 	<div class="CajaUno">
