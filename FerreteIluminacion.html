@@ -1,19 +1,22 @@
 <html>
 <head>
-	<title>Ferrete Facturacion</title>
+	<title>Ferrete Iluminacion</title>
 	<link rel="stylesheet" href="estilo.css">
 	<link rel="stylesheet" href="animacion.css">
 </head>
 <body>
 	<div class="CajaUno animated flipInX">
-	<h1>Ferrete Facturacion: </h1>
-	<form id="FormIngreso" action="FerreteFacturacionResultado.php" method="POST">
-		<input type="text" name="Prod1" placeholder="Ingrese el primer Producto"><br>
-		<input type="text" name="Prod2" placeholder="Ingrese el segundo Producto"><br>
-		<input type="text" name="Prod3" placeholder="Ingrese el tercer Producto"><br>
-		<input class="MiBotonUTN animated flipInY" type="Submit" name="Sumar" value="Sumar Productos">
-		<input class="MiBotonUTN animated flipInY" type="Submit" name="Promediar" value="Calcular Promedio">
-		<input class="MiBotonUTN animated flipInY" type="Submit" name="PrecioFinal" value="Calcular precio con IVA">
+	<h1>Ferrete Iluminacion: </h1>
+	<form id="FormIngreso" action="FerreteIluminacionResultado.php" method="POST">
+		<input type="text" name="Cantidad" placeholder="Ingrese la cantidad de lamparas compradas"><br>
+		<select name="Marca">
+			<option value="ArgentinaLuz">ArgentinaLuz</option>
+			<option value="FelipeLamparas">FelipeLamparas</option>
+			<option value="JeLuz">JeLuz</option>
+			<option value="HazIluminacion">HazIluminacion</option>
+			<option value="Osram">Osram</option>
+		</select>
+		<input class="MiBotonUTN animated flipInY" type="Submit" name="Iluminacion" value="CalcularPrecio">
 	</form>
 	</div>
 	<div class="CajaUno">
