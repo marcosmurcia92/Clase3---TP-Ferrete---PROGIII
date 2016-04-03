@@ -208,7 +208,7 @@ position: absolute;
   display:block;
  
   border:hidden;
-  width:150px;
+  width:100%;
   background:Blue;
   margin-top:1%;
   padding:6px;
@@ -227,7 +227,14 @@ position: absolute;
 }
 
 
-
+.CajaUno h2{
+  background:#0056F5; 
+  padding:20px 0;
+  font-size:140%;
+  font-weight:300;
+  text-align:center;
+  color:#fff;
+}
 
 .CajaUno h1{
   background:#f50056; 

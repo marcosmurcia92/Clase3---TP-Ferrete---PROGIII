@@ -1,10 +1,25 @@
 <html>
 <head>
-	<title></title>
+	<title>Ferrete Construccion</title>
 	<link rel="stylesheet" href="estilo.css">
 	<link rel="stylesheet" href="animacion.css">
 </head>
 <body>
-
+	<div class="CajaUno animated flipInX">
+	<h1>Ferrete Construcción: </h1>
+	<form id="FormIngreso" action="FerreteConstruccionResultado.php" method="POST">
+		<input type="text" name="Largo" placeholder="Ingrese el Largo del terreno en metros"><br>
+		<input type="text" name="Ancho" placeholder="Ingrese el Ancho del terreno en metros"><br>
+		<input type="text" name="Radio" placeholder="Ingrese el Radio del terreno en metros"><br>
+		<input class="MiBotonUTN animated flipInY" type="Submit" name="Alambre" value="Calcular Cantidad de Alambre Rectangulo">
+		<input class="MiBotonUTN animated flipInY" type="Submit" name="AlambreR" value="Calcular Cantudad de Alambre Circular">
+		<input class="MiBotonUTN animated flipInY" type="Submit" name="Materiales" value="Calcular Cantidad de Materiales">
+	</form>
+	</div>
+	<div class="CajaUno">
+	<form action="Index.html" method="POST">
+		<input class="MiBotonUTN animated flipInY" type="Submit" name="BotonVolver" value="Volver al Inicio">
+	</form>
+	</div>
 </body>
 </html>
