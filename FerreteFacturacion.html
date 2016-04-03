@@ -6,7 +6,7 @@
 </head>
 <body>
 	<div class="CajaUno animated flipInX">
-	<form id="FormIngreso" method="POST">
+	<form id="FormIngreso" action="FerreteFacturacionResultado.php" method="POST">
 		<input type="text" name="Prod1" placeholder="Ingrese el primer Producto"><br>
 		<input type="text" name="Prod2" placeholder="Ingrese el segundo Producto"><br>
 		<input type="text" name="Prod3" placeholder="Ingrese el tercer Producto"><br>
@@ -14,5 +14,11 @@
 		<input class="MiBotonUTN animated flipInY" type="Submit" name="Promediar" value="Calcular Promedio">
 		<input class="MiBotonUTN animated flipInY" type="Submit" name="PrecioFinal" value="Calcular precio con IVA">
 	</form>
+	</div>
+	<div class="CajaUno">
+	<form action="Index.html" method="POST">
+		<input class="MiBotonUTN animated flipInY" type="Submit" name="BotonVolver" value="Volver al Inicio">
+	</form>
+	</div>
 </body>
 </html>

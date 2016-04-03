@@ -38,7 +38,7 @@ caption {
   -webkit-transition:opacity 1s;
 }
 .CajaEnunciado {
-  max-width: 30%;
+  max-width: 100%;
   border: dashed;
  position: fixed;
 background: royalblue;
